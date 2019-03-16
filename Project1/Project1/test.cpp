@@ -3,7 +3,7 @@
 
 using namespace std;
 
-////∂—≈≈–Ú
+////Heap_Sort
 //void adjust_sort(vector<int>& m, int node, int size)
 //{
 //	int left = 2 * node + 1;
@@ -26,7 +26,7 @@ using namespace std;
 //	}
 //}
 
-////πÈ≤¢≈≈–Ú
+////Merge_Sort
 //void mergeAdd(vector<int>& m, int left, int mid, int right, int *temp)
 //{
 //	if (left < right)
@@ -70,6 +70,7 @@ using namespace std;
 //	}
 //}
 
+//Quick_Sort
 void quickSort(vector<int>& m, int left, int right)
 {
 	if (left < right)
@@ -101,7 +102,7 @@ int main()
 	vector<int> arr = { 2, 1, 2, 0, -4, 5, 41, 5, 5, 4, 8, 9, 32, 4, 5, 5, 445, 4 };
 	decltype(arr.size()) num = arr.size();
 
-	////√∞≈›≈≈–Ú
+	////Bubble_Sort
 	//for (size_t i = 1; i < num; i++)
 	//{
 	//	bool isOrnot = true;
@@ -121,7 +122,7 @@ int main()
 	//	}
 	//}
 
-	////—°‘Ò≈≈–Ú
+	////Choose_Sort
 	//for (size_t i = 0; i < num - 1; i++)
 	//{
 	//	int min = i;
@@ -140,7 +141,7 @@ int main()
 	//	}
 	//}
 
-	////≤Â»Î≈≈–Ú
+	////Insert_Sort
 	//for (size_t i = 1; i < num; i++)
 	//{
 	//	int pre = i - 1;
@@ -153,7 +154,7 @@ int main()
 	//	arr[pre + 1] = curr;
 	//}
 
-	////œ£∂˚≈≈–Ú
+	////Shell_Sort
 	//int gap = num / 2;
 	//while (gap > 0)
 	//{
@@ -171,7 +172,7 @@ int main()
 	//	gap = gap / 2;
 	//}
 
-	////∂—≈≈–Ú
+	////Heap_Sort
 	//for (int i = num / 2 - 1; i >= 0; i--)
 	//{
 	//	adjust_sort(arr, i, num);
@@ -185,12 +186,12 @@ int main()
 	//	adjust_sort(arr, 0, j);
 	//}
 
-	////πÈ≤¢≈≈–Ú
+	////Merge_Sort
 	//int *temp = new int[num];
 	//mergeSort(arr, 0, num - 1, temp);
 	//delete[] temp;
 
-	//øÏÀŸ≈≈–Ú
+	//Quick_Sort
 	quickSort(arr, 0, num - 1);
 
 	//output
